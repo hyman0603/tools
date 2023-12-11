@@ -1,7 +1,9 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/jinziqi/jingziqi",
+    "pages/jingziqi/jingziqi"
   ],
   "window": {
     "navigationBarTextStyle": "black",

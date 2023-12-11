@@ -1,14 +1,13 @@
-<navigation-bar title="井字棋" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<!-- mainPage.wxml -->
+<navigation-bar title="主页" back="{{false}}" color="black" background="#FFF"></navigation-bar>
 
-<view class="player-indicator">
-  当前玩家: {{currentPlayer}}
-</view>
-
-<view class="container">
-  <block wx:for="{{cells}}" wx:for-item="cell" wx:for-index="index" wx:key="index">
-    <view class="cell {{cell === 'X' ? 'x-cell' : 'o-cell'}}" data-index="{{index}}" bindtap="handleCellClick">{{cell}}</view>
+<view class="tool-container">
+  <block wx:for="{{tools}}" wx:key="index">
+    <block wx:if="{{item.showLogo !== 'N'}}">
+      <button bindtap="navigateToTool" data-toolid="{{item.toolId}}" class="tool-button">
+        <image src="{{item.logo}}" mode="aspectFit" class="tool-logo" />
+        <text class="tool-name">{{item.name}}</text>
+      </button>
+    </block>
   </block>
 </view>
-
-<view class="winner" wx:if="{{winner}}">获胜方: {{winner}}</view>
-<button class="restart-button" bindtap="restartGame">重新开始</button>

@@ -1,0 +1,61 @@
+
+.player-indicator {
+  text-align: center;
+  font-size: 48rpx;
+  margin-top: 20rpx;
+  margin-bottom: 50rpx;
+}
+
+.container {
+  margin-top: 50rpx;
+  display: grid;
+  grid-template-columns: repeat(3, 200rpx); /* 每个单元格宽度为100rpx */
+  grid-template-rows: repeat(3, 200rpx); /* 每个单元格高度为100rpx */
+  width: 600rpx; /* 设置容器宽度 */
+  height: 600rpx; /* 设置容器高度 */
+  margin: 0 auto; /* 居中 */
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36rpx;
+  border: 1rpx solid #000;
+  cursor: pointer;
+  width: 200rpx; /* 设置单元格宽度 */
+  height: 200rpx; /* 设置单元格高度 */
+}
+
+.x-cell {
+  color: #FF5733; /* 设置X的颜色 */
+  font-size: 72rpx;
+  font-weight: bold;
+}
+
+.o-cell {
+  color: #337DFF; /* 设置O的颜色 */
+  font-size: 72rpx;
+  font-weight: bold;
+}
+
+.winner {
+  text-align: center;
+  font-size: 48rpx;
+  margin-top: 20rpx;
+}
+.restart-button {
+  width: 260rpx;
+  height: 80rpx;
+  font-size: 45rpx;
+  background-color: #007AFF;
+  color: #fff;
+  border: none;
+  border-radius: 10rpx;
+  text-align: center;
+  display: flex; /* 添加 flex 属性 */
+  justify-content: center; /* 水平居中 */
+  align-items: center; /* 垂直居中 */
+  margin: 0 auto;
+  margin-top: 50rpx;
+}

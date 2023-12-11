@@ -1,4 +1,5 @@
 {
+  "navigationBarTitleText": "井字棋",
   "usingComponents": {
     "navigation-bar": "/components/navigation-bar/navigation-bar"
   }
