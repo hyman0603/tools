@@ -1,61 +1,35 @@
+/* mainPage.wxss */
 
-.player-indicator {
-  text-align: center;
-  font-size: 48rpx;
-  margin-top: 20rpx;
-  margin-bottom: 50rpx;
-}
-
-.container {
-  margin-top: 50rpx;
-  display: grid;
-  grid-template-columns: repeat(3, 200rpx); /* 每个单元格宽度为100rpx */
-  grid-template-rows: repeat(3, 200rpx); /* 每个单元格高度为100rpx */
-  width: 600rpx; /* 设置容器宽度 */
-  height: 600rpx; /* 设置容器高度 */
-  margin: 0 auto; /* 居中 */
-}
-
-.cell {
+.tool-container {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 40rpx;
+}
+
+.tool-button {
+  width: calc(50% - 20rpx);
+  margin-bottom: 20rpx;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: 36rpx;
-  border: 1rpx solid #000;
-  cursor: pointer;
-  width: 200rpx; /* 设置单元格宽度 */
-  height: 200rpx; /* 设置单元格高度 */
+  background-color: transparent; /* 或者 background-color: initial; */
 }
 
-.x-cell {
-  color: #FF5733; /* 设置X的颜色 */
-  font-size: 72rpx;
-  font-weight: bold;
+/* 如果奇数个logo，最后一个按钮占一半宽度，保持位置固定在左边 */
+.tool-container:last-child .tool-button:last-child {
+  width: 50%;
+  margin-left: 0;
 }
 
-.o-cell {
-  color: #337DFF; /* 设置O的颜色 */
-  font-size: 72rpx;
-  font-weight: bold;
+.tool-logo {
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 5rpx;
 }
 
-.winner {
-  text-align: center;
-  font-size: 48rpx;
-  margin-top: 20rpx;
-}
-.restart-button {
-  width: 260rpx;
-  height: 80rpx;
-  font-size: 45rpx;
-  background-color: #007AFF;
-  color: #fff;
-  border: none;
-  border-radius: 10rpx;
-  text-align: center;
-  display: flex; /* 添加 flex 属性 */
-  justify-content: center; /* 水平居中 */
-  align-items: center; /* 垂直居中 */
-  margin: 0 auto;
-  margin-top: 50rpx;
+.tool-name {
+  font-size: 32rpx;
+  color: #333;
 }
