@@ -1,0 +1,48 @@
+/* index.wxss */
+.container {
+  position: relative;
+  height: 100vh;
+  /* 可以根据需要调整高度 */
+}
+
+.bing-image {
+  width: 100%;
+  margin-top: 150rpx;
+  /* 调整图片容器顶部的间距 */
+}
+
+.date {
+  position: absolute;
+  right: 30rpx;
+  bottom: 30rpx; /* 调整底部间距 */
+}
+
+.nav {
+  position: absolute;
+  bottom: 240rpx;
+  /* 调整距离底部的值 */
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.nav-btn {
+  color: #3498db;
+  /* 修改按钮文字颜色 */
+}
+
+.copyright-container {
+  position: relative;
+  /* 使用相对定位 */
+  margin-top: 10px;
+  /* 调整与图片的距离 */
+  width: 100%;
+  text-align: center;
+}
+
+.copyright {
+  padding: 5px;
+  color: #333;
+}

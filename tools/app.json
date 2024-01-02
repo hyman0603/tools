@@ -2,8 +2,8 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/jinziqi/jingziqi",
-    "pages/jingziqi/jingziqi"
+    "pages/jingziqi/jingziqi",
+    "pages/meiriyitu/meiriyitu"
   ],
   "window": {
     "navigationBarTextStyle": "black",

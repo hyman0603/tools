@@ -1,4 +1,4 @@
-<navigation-bar title="井字棋" back="{{false}}" color="black" background="#FFF"></navigation-bar>
+<navigation-bar title="井字棋" back="{{true}}" color="black" background="#FFF"></navigation-bar>
 
 <view class="player-indicator">
   当前玩家: {{currentPlayer}}
