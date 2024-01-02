@@ -1,0 +1,12 @@
+<!-- index.wxml -->
+<navigation-bar title="每日一图" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+
+<view class="container">
+  <image class="bing-image" src="{{imageUrl}}" mode="aspectFit" bindtap="previewImage"></image>
+  <view class="date">@{{endDate}}</view>
+  <view class="copyright">{{copyright}}</view>
+  <view class="nav">
+    <text class="nav-btn" bindtap="getPreviousImage">上一个图像</text>
+    <text class="nav-btn" bindtap="getNextImage">下一个图像</text>
+  </view>
+</view>
