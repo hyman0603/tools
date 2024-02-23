@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/logs/logs",
     "pages/jingziqi/jingziqi",
-    "pages/meiriyitu/meiriyitu"
+    "pages/meiriyitu/meiriyitu",
+    "pages/shuipingyi/shuipingyi",
+    "pages/beianquery/beianquery",
+    "pages/beianquery/resultmore"
   ],
   "window": {
     "navigationBarTextStyle": "black",

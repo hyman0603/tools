@@ -45,7 +45,7 @@ Tools微信小程序是一款基于微信小程序开发的工具箱，主要用
   docker run -it -d -p 6060:6060 api-flask:v1
   ```
 
-  3、创建auth令牌（采用本地模式，时间永久，可自行调整代码），如果接口不需要令牌认证，取消认证即可@token_required
+  3、创建auth令牌（采用本地模式，token时间永久，可自行调整代码），如果接口不需要令牌认证，取消认证即可@token_required
 
   ```
   curl -X POST -H "Content-Type: application/json" -d '{"username": "flask-api", "password": "M@gor^5EIUwv!83L"}' http://localhost:6060/auth
@@ -78,10 +78,33 @@ Tools微信小程序是一款基于微信小程序开发的工具箱，主要用
 
   
 
-## 项目演示
-| 项目 | 扫码体验 | 项目截图 |
-|------|------|------|
-|   井字棋 |<img src="./images/jingziqi.png" width="250" height="250"/> |  <img src="./images/jingziqi.jpg" width="130" height="250"/> |
-| 每日一图（壁纸） |<img src="./images/meiriyitu1.png" width="250" height="250"/> | <img src="./images/meiriyitu.png" width="130" height="250"/> |
-|   todo | |  |
+## 项目体验
+
+**搜索相应项目名称进行体验**
+
+<img src="./images/0.jpg" />
+
+
+
+
+
+## 项目截图
+
+### 井字棋
+
+<img src="./images/1.jpg"  width="351" height="759"/>
+
+
+
+### 每日一图（壁纸）
+
+<img src="./images/2.png" />
+
+### 水平仪
+
+<img src="./images/3.png" />
+
+### 深度合成服务算法备案查询
+
+<img src="./images/4.png"/>
 

@@ -1,0 +1,29 @@
+<navigation-bar title="水平仪" back="{{true}}" color="black" background="#88B0FF"></navigation-bar>
+
+
+<view class="container">
+  <view class="hbar">
+    <view class="hbartxt">{{horizontalDegree}}°</view>
+    <!-- 添加第一条竖线 -->
+    <view class="hbar-line"></view>
+    <!-- 添加圆点 -->
+    <view class="dot" style="left:{{leftDot1}}rpx;"></view>
+    <!-- 添加第二条竖线 -->
+    <view class="hbar-line2"></view>
+  </view>
+
+  <view class="vbar">
+    <view class="vbartxt">{{verticalDegree}}°</view>
+    <!-- 添加第一条横线 -->
+    <view class="vbar-line"></view>
+    <!-- 添加圆点 -->
+    <view class="dot2" style="top:{{topDot2}}rpx;"></view>
+    <!-- 添加第二条横线 -->
+    <view class="vbar-line2"></view>
+  </view>
+
+  <view class="zero">
+    <view class="region" style="background:{{regionBG}};"></view>
+    <view class="core" style="background:{{backgroundColor}};margin-top: {{top}}rpx;margin-left: {{left}}rpx;"></view>
+  </view>
+</view>

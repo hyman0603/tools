@@ -1,0 +1,142 @@
+/* index.wxss */
+.container {
+  top: 100rpx;
+  position: absolute;
+  height: 100%;
+  left: 0;
+  right: 0;
+  background: #88B0FF;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.hbar {
+  position: relative;
+  top: 420rpx;
+  left: 210rpx;
+  width: 450rpx;
+  height: 150rpx;
+  background: #88B0FF;
+  border: 2px solid #333;
+  border-radius: 100rpx;
+}
+
+.vbar {
+  position: absolute;
+  top: 560rpx;
+  left: 80rpx;
+  width: 150rpx;
+  height: 450rpx;
+  line-height: 200px;
+  border: 2px solid #333;
+  border-radius: 100rpx;
+}
+
+/* 竖线 */
+.hbar-line {
+  position: absolute;
+  top: 0;
+  left: 150rpx; /* 调整线的位置 */
+  width: 2px;
+  height: 150rpx;
+  background: #333;
+}
+.hbar-line2 {
+  position: absolute;
+  top: 0;
+  left: 300rpx; /* 调整线的位置 */
+  width: 2px;
+  height: 150rpx;
+  background: #333;
+}
+
+.vbar-line {
+  position: absolute;
+  top: 150rpx; /* 调整线的位置 */
+  left: 0;
+  width: 150rpx;
+  height: 2px;
+  background: #333;
+}
+
+/* 横线 */
+.vbar-line2 {
+  position: absolute;
+  top: 300rpx; 
+  left: 0;
+  width: 150rpx;
+  height: 2px;
+  background: #333;
+}
+
+.dot {
+  position: absolute;
+  top: 0rpx;
+  left: 150rpx;
+  width: 150rpx;
+  height: 150rpx;
+  background: #000;
+  border-radius: 50%;
+}
+
+.dot2 {
+  position: absolute;
+  top: 150rpx;
+  left: 0rpx;
+  width: 150rpx;
+  height: 150rpx;
+  background: #000;
+  border-radius: 50%;
+}
+
+.hbartxt,
+.vbartxt {
+  position: absolute;
+  top: 10rpx;
+  left: 120rpx;
+  width: 200rpx;
+  height: 30px;
+  text-align: center;
+  line-height: 120rpx;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.vbartxt {
+  position: absolute;
+  top: 185rpx;
+  left: 0rpx;
+  width: 150rpx;
+  height: 30rpx;
+  text-align: center;
+  line-height: 80rpx;
+  /* background: #39A; */
+}
+
+.zero {
+  width: 400rpx;
+  height: 400rpx;
+  border-radius: 50%;
+  border: 5rpx solid #000000;
+  margin-top: 430rpx;
+  margin-left: 250rpx;
+}
+
+.region {
+  width: 160rpx;
+  height: 160rpx;
+  margin-top: 120rpx;
+  margin-left: 120rpx;
+  border-radius: 50%;
+  border: 5rpx solid #000000;
+  /* position: absolute; */
+}
+
+.core {
+  width: 150rpx;
+  height: 150rpx;
+  margin-top: -159rpx;
+  margin-left: 129rpx;
+  border-radius: 50%;
+}
