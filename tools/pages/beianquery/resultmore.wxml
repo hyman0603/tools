@@ -1,0 +1,46 @@
+<navigation-bar title="深度合成备案查询详情" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+
+<view class="container">
+  <view class="weui-form-preview__bd">
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">算法名称</view>
+      <view class="weui-form-preview__value">{{resultData.name}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">角色</view>
+      <view class="weui-form-preview__value">{{resultData.role}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">主体名称</view>
+      <view class="weui-form-preview__value">{{resultData.subject}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">应用产品</view>
+      <view class="weui-form-preview__value">{{resultData.product}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">主要用途</view>
+      <view class="weui-form-preview__value">{{resultData.purpose}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">备案编号</view>
+      <view class="weui-form-preview__value">{{resultData.recordNumber}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">备注</view>
+      <view class="weui-form-preview__value">{{resultData.notes}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">发布批次</view>
+      <view class="weui-form-preview__value">{{resultData.batch}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">发布时间</view>
+      <view class="weui-form-preview__value">{{resultData.time}}</view>
+    </view>
+    <view class="weui-form-preview__item">
+      <view class="weui-form-preview__label">数据来源</view>
+      <view class="weui-form-preview__value">{{resultData.url}}</view>
+    </view>
+  </view>
+</view>

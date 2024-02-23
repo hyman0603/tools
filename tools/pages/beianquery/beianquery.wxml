@@ -1,0 +1,72 @@
+<navigation-bar title="深度合成备案查询" back="{{true}}" color="black" background="#FFF"></navigation-bar>
+
+
+<view class="container">
+  <view class="miniappinfo">
+    <image class="index-logo" src="https://mmbiz.qpic.cn/sz_mmbiz_png/DI9jrncbAeBMKHtNuREQ29MOjlPamjyW0OlUR1gj09DP2GHr7qPHhDYDF1xyibgHA6pbgA3Wp7KuBVTHiaMWGjWA/640?wx_fmt=png&amp;from=appmsg"></image>
+    <view class="index-desc">自2023年1月10日起，我国开始施行《互联网信息服务深度合成管理规定》，并于2023年8月15日起施行《生成式人工智服务管理暂行办法》。为方便大家查询此类型的备案信息，提供国内深度合成服务算法备案信息在线查询工具。<text class="index-desc2">查询结果仅供参考，具体以官方数据为准。(https://beian.cac.gov.cn)</text></view>
+  </view>
+  <form report-submit="true">
+    <view class="appform">
+      <!-- 新添加的搜索输入框 -->
+      <view class="batchArea">
+        检索：<input class="input-search" bindinput="formSubmit" maxlength="25" placeholder="请输入关键字或备案编号" value="{{inputvalue}}" />
+      </view>
+    </view>
+  </form>
+
+  <!-- 根据搜索结果或全部数据进行展示 -->
+  <view class="list">
+    <view wx:if="{{searchResults.length > 0}}" wx:for="{{searchResults}}" wx:key="idx" wx:for-index="idx">
+      <!-- 展示搜索结果 -->
+      <view class="{{idx % 2 == 0 ? 'odd' : 'even'}} result-item" id="{{idx}}" bindtap="more">
+        <view class="weui-form-preview__bd">
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">算法名称</view>
+            <view class="weui-form-preview__value">{{item.name}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">主体名称</view>
+            <view class="weui-form-preview__value">{{item.subject}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">备案编号</view>
+            <view class="weui-form-preview__value">{{item.recordNumber}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">产品名称</view>
+            <view class="weui-form-preview__value">{{item.product}}</view>
+          </view>
+        </view>
+        <view class="more" aira-role="button" aira-label="点击后可获得详细信息">详细 ></view>
+      </view>
+    </view>
+    <view wx:if="{{searchResults.length === 0}}" wx:for="{{algorithms}}" wx:key="idx" wx:for-index="idx">
+      <!-- 展示全部数据 -->
+      <view class="{{idx % 2 == 0 ? 'odd' : 'even'}} result-item" id="{{idx}}" bindtap="more">
+        <view class="weui-form-preview__bd">
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">算法名称</view>
+            <view class="weui-form-preview__value">{{item.name}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">主体名称</view>
+            <view class="weui-form-preview__value">{{item.subject}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">备案编号</view>
+            <view class="weui-form-preview__value">{{item.recordNumber}}</view>
+          </view>
+          <view class="weui-form-preview__item">
+            <view class="weui-form-preview__label">产品名称</view>
+            <view class="weui-form-preview__value">{{item.product}}</view>
+          </view>
+        </view>
+        <view class="more" aira-role="button" aira-label="点击后可获得详细信息">详细 ></view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="weui-footer weui-footer_fixed-bottom">
+  <view class="weui-footer__text easter_egg" bindtap="easterEgg">数据最后更新时间:{{lastDate}}</view>
+</view>
